@@ -1,0 +1,23 @@
+Source: golang-github-golang-jwt-jwt
+Maintainer: Louis Royer <louis.royer@irit.fr>
+Uploaders: Louis Royer <louis.royer@irit.fr>
+Section: golang
+Testsuite: autopkgtest-pkg-go
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               dh-golang,
+               golang-any
+Standards-Version: 4.5.0
+Vcs-Browser: https://github.com/louisroyer-deb/golang-github-golang-jwt-jwt
+Vcs-Git: https://github.com/louisroyer-deb/golang-github-golang-jwt-jwt
+Homepage: https://github.com/golang-jwt/jwt
+Rules-Requires-Root: no
+XS-Go-Import-Path: github.com/golang-jwt/jwt
+
+Package: golang-github-golang-jwt-jwt-dev
+Architecture: all
+Depends: ${misc:Depends}
+Description: Community maintained clone of https://github.com/dgrijalva/jwt-go (library)
+ A go (http://www.golang.org) (or 'golang' for search
+ engine friendliness) implementation of JSON Web Tokens
+ (https://datatracker.ietf.org/doc/html/rfc7519).
